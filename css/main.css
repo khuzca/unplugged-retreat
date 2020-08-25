@@ -165,7 +165,7 @@ address {
     margin: 50px 0;
 }
 
- /* -------------------- Base Header - Footer Styles ----------------- */
+ /* -------------------- Base Header & Footer Styles ----------------- */
 
 header,
 footer {
@@ -237,14 +237,25 @@ footer p {
 }
 
 footer .content-wrapper {
-  width: 55%;
+  width: 50%;
   margin: 50px 0;
+  text-align: center;
+  flex-direction: column;
 }
 
 footer .contact {
   margin-bottom: 50px;
+  text-align: center;
+  flex-direction: column;
 }
 
+
+footer .social{
+  margin-bottom: 50px;
+  text-align: center;
+  flex-direction: column;
+    
+}
 footer .social-icons {
   display: flex;
   justify-content: space-around;
@@ -258,6 +269,8 @@ footer .social-icons p {
 }
 
 footer .copyright {
+  text-align: center;
+  flex-direction: column;
   margin: 20px 0;
 
 }
@@ -269,11 +282,13 @@ footer .copyright {
 /* HERO AREA */
 
 .hero-area {
+    background: grey;
     display: flex;
     justify-content: center;
     flex-flow: row wrap;
-
+    
 }
+
 
 /* ASIDE AREA */
 
@@ -290,6 +305,7 @@ aside {
 /* FEATURES */
 
 .features {
+  background: grey;
   display: flex;
   justify-content: center;
   flex-flow: row wrap;    
@@ -298,24 +314,32 @@ aside {
 .features h2 {
   margin-bottom: 60px;
 }
-
+ 
 .features .article {
     width: 63%;
     margin: 30px 0;
+    
 }
 
+.features .fontawesome-icon{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 
 .feautures .features-item-description {
   display: flex;
   justify-content: center;
-  align-items: center;
   flex-flow: row wrap;
 
 }
 
 .feautures p {
-    text-align: center;
-    margin: 0;
+    display: flex;
+    justify-content: center;
+ 
+    flex-flow: row wrap;
+
 }
 
 /* REVIEWS */
@@ -570,9 +594,9 @@ input[type=button] {
     /* Hero Area */
     
     hero-area h1 {
-    font-size: 3em;
-    line-height: 1;
-    margin: 0;
+        font-size: 3em;
+        line-height: 1;
+        margin: 0;
 }
  
     /* Aside */
@@ -736,6 +760,7 @@ h3,
 
 
   /* Hero */
+
   .hero-area h1 {
       font-size: 3.75em;
       width: 60%;
