@@ -264,10 +264,20 @@ footer .social-icons {
 }
 
 footer .social-icons p {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: #527158;
   display: flex;
   justify-content: center;
   align-items: center;
+ 
 }
+
+footer .social-icons p i {
+  font-size: 1.3125em;
+}
+
 
 footer .copyright {
   text-align: center;
