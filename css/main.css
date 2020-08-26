@@ -88,8 +88,8 @@ textarea {
    ========================================================================== */
 
 
-////* GLOBAL STYLES */////
- 
+/* GLOBAL STYLES */
+
 html {
 	font-size: 16px;
 }
@@ -226,7 +226,7 @@ header nav ul{
 
 
 
-////* FOOTER styles */////
+/* FOOTER styles */
 
 footer {
   text-align: center;
@@ -332,6 +332,12 @@ aside {
   justify-content: center;
   align-items: center;
   flex-flow: row wrap;
+}
+
+
+.features i {
+  font-size: 3.75em;
+  margin-bottom: 40px;
 }
 
 features p {
@@ -626,7 +632,7 @@ input[type=button] {
  
     /* Features */
     
-     .features h2 {
+    .features h2 {
     margin-bottom: 20px;
   }
  
@@ -644,7 +650,14 @@ input[type=button] {
         width: 50%;
     }
  
-    /* Reviews */
+    
+.features i{
+    font-size: 3.75em;
+    margin-bottom: 40px;
+}
+
+
+/* Reviews */
     .reviews article {
         display: flex;
         justify-content:space-between;
@@ -691,7 +704,7 @@ input[type=button] {
     width: 100%;
   }
     
-////* ABOUT PAGE - TABLET */////
+/* ABOUT PAGE - TABLET */
 
 .mission-content {
         display: flex;
@@ -703,10 +716,13 @@ input[type=button] {
 
 .mission-content p {
         width: 45%;
-    
     }
  
-    .contact-section .content-wrapper h2 {
+.map figure {
+    padding-bottom: 45.5%;
+}
+
+.contact-section .content-wrapper h2 {
         width: 80%;
     }
  
@@ -722,7 +738,7 @@ input[type=button] {
     font-size: 1.5em;
   }
 
-////* FAQ - TABLET */////
+/* FAQ - TABLET */
     
     
 .faq .content-wrapper {
@@ -816,7 +832,7 @@ footer h4 {
     font-size: 1.875em;
   }
 
-////* ABOUT PAGE - DESKTOP */////
+/* ABOUT PAGE - DESKTOP */
 
   .mission h2,
   .contact-section .content-wrapper h2 {
@@ -828,7 +844,11 @@ footer h4 {
     font-size: 1.875em;
   }
 
-////* FAQ PAGE - DESKTOP */////
+.map figure {
+    padding-bottom: 37.5%;
+}
+
+/* FAQ PAGE - DESKTOP */
 
  .faq h2 {
     width: 100%;
