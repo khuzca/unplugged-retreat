@@ -97,7 +97,7 @@ html {
 body {
  
     font-family: 'Open Sans', sans-serif;
-    font-size: 1em;
+    font-size: 0.85em;
     text-align: left;
     color: #e2e3ed;
 }
@@ -106,6 +106,8 @@ ul,
 ol {
     
     list-style-type: none;
+    margin: 0;
+    padding: 0;
 }
  
 a {
@@ -114,26 +116,20 @@ a {
      text-decoration: none;
 }
 
-h1{
-    font-family: 'Poppins', sans-serif;
-    font-size: 3em;
-    font-weight: 400;
-    color: #e2e3ed;
-    
-}
  
 h2 {
     font-family: 'Poppins', sans-serif;
-    font-size: 2.25em;
+    font-size: 1.875em;
     font-weight: 400;
     color: #e2e3ed;
+    margin: 0;
     
 }
  
 h3, 
 h4 {
     font-family: 'Poppins', sans-serif;
-    font-size: 1.5em;
+    font-size: 1.125em;
     font-weight: 400;
     color: #e2e3ed;
     margin: 20px 0;
@@ -195,6 +191,14 @@ header .content-wrapper {
     
 }
 
+header figure {
+  width: 60%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: row wrap;
+}
+
 
 .header-divider{
   background: #3a3a3a; 
@@ -206,7 +210,7 @@ header .content-wrapper {
 
 header nav {
   font-size: 1.125em;
-  font-weight: 700;
+  font-weight: 400;
   text-transform: uppercase;
   display: flex;
   justify-content: space-around;
@@ -296,23 +300,57 @@ footer .copyright {
     background: url(../img/jake-melara-30679-unsplash.jpg);
     background-size: cover;
     background-position: center;
+    min-height: 500px;
     display: flex;
     justify-content: center;
-    flex-flow: row wrap;
-    
+    flex-flow: row wrap;   
 }
 
+.hero-area h1 {
+  font-size: 2em;
+  font-family: 'Poppins', Helvetica, Arial, sans-serif; 
+  font-weight:200; 
+  line-height: 1; 
+ 
+  
+}
 
 /* ASIDE AREA */
 
 
 aside {
+    background-color: #527158;
     display: flex;
     justify-content: center;
     align-items: center;
-    flex-flow: row wrap;
-    background-color: #527158;
+    flex-flow: row wrap;   
         
+}
+
+aside .form {
+  margin-top: 30px;
+}
+
+input[type=text] {
+  box-sizing: border-box;
+  width: 100%;
+  color: #2a423a;
+  font-style: italic;
+  padding: 1em;
+}
+
+input[type=button] {
+  width: 100%;
+  padding: 20px 0;
+  margin-top: 20px;
+  background-color: #2a423a;
+  font-family: 'Poppins', Helvetica, Arial, sans-serif;
+  font-weight: 500;
+  font-size: 1.125em;
+  color: #e2e3ed;
+  border: none;
+  text-align: center;
+  text-transform: uppercase;
 }
 
 /* FEATURES */
@@ -353,6 +391,7 @@ aside {
 features p {
   text-align: center;
   margin: 0;
+  display: block;
 }
 
 /* REVIEWS */
@@ -366,16 +405,24 @@ features p {
 }
 
 .reviews h2{
+    display: block;
     margin-bottom: 40px;
      line-height: 1;
 }
 
 .reviews h3{
+    display: block;
     width: 55%;
     margin: 20px 0;
 }
 
+.reviews p{
+    display: left;
+}
 
+.reviews figure{
+    width: 100%;
+}
 
 /* -------------------- Mobile styles - ABOUT page  ----------------- */
 
@@ -441,6 +488,7 @@ features p {
 
 .faq h2 {
   margin-bottom: 40px;
+  line-height: 1;
 }
 
 .faq-content {
@@ -536,36 +584,6 @@ features p {
 }
 
 
-
-aside .form {
-  margin-top: 30px;
-}
- 
-input[type=text] {
-  box-sizing: border-box;
-  width: 100%;
-  color: #2a423a;
-  font-style: italic;
-  padding: 1em;
-}
- 
-input[type=button] {
-  width: 100%;
-  padding: 20px 0;
-  margin-top: 20px;
-  background-color: #2a423a;
-  font-family: 'Poppins', Helvetica, Arial, sans-serif;
-  font-weight: 500;
-  font-size: 1.125em;
-  color: #e2e3ed;
-  border: none;
-  text-align: center;
-  text-transform: uppercase;
-}
-
-
-
-
 /* ==========================================================================
    EXAMPLE Media Queries for Responsive Design.
    These examples override the primary ('mobile first') styles.
@@ -617,7 +635,14 @@ input[type=button] {
         display: none;
     }
  
+    header figure {
+    width: 30%;
+  }
     /* Hero Area */
+    
+    .hero-area {
+    min-height: 600px;
+  }
     
     hero-area h1 {
         font-size: 3em;
@@ -626,6 +651,7 @@ input[type=button] {
 }
  
     /* Aside */
+    
     aside .content-wrapper {
         margin: 50px 0;
         display:flex;
@@ -657,7 +683,7 @@ input[type=button] {
     }
  
     .features .features-item-description {
-        width: 50%;
+        width: 62%;
     }
  
     
