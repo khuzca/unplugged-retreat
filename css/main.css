@@ -760,14 +760,6 @@ input[type=button] {
 .contact-section .content-wrapper h2 {
         width: 80%;
     }
- 
-    .contact {
-      display: flex;
-      justify-content: space-between;
-      align-items: flex-start;
-    
-}
-
 
 .contact-content h4 {
     font-size: 1.5em;
